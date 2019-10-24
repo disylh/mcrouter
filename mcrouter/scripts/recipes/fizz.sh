@@ -21,4 +21,4 @@ fi
 cd "$PKG_DIR/fizz/fizz/" || die "cd fail"
 
 cmake . -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR" -DBUILD_TESTS=OFF
-make $MAKE_ARGS && make install $MAKE_ARGS
+make -j4 $MAKE_ARGS && make install $MAKE_ARGS

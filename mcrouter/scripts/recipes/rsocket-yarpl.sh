@@ -26,5 +26,5 @@ cmake .. -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR" \
   -DBUILD_BENCHMARKS=OFF \
   -DBUILD_EXAMPLES=OFF \
   -DBUILD_TESTS=OFF
-make $MAKE_ARGS && make install $MAKE_ARGS
+make -j4 $MAKE_ARGS && make install $MAKE_ARGS
 

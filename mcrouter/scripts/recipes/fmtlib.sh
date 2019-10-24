@@ -16,5 +16,5 @@ cd "$PKG_DIR/fmt/build" || die "cd fmt failed"
 
 CXXFLAGS="$CXXFLAGS -fPIC" \
   cmake .. -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR"
-make $MAKE_ARGS && make install $MAKE_ARGS
+make -j4 $MAKE_ARGS && make install $MAKE_ARGS
 
