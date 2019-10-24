@@ -1,13 +1,43 @@
 sudo: required
-dist: xenial
+dist: bionic
 
 language: cpp
 
 compiler:
   - gcc
 
-script: ./mcrouter/scripts/install_ubuntu_16.04.sh "$(pwd)"/mcrouter-install
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y autoconf
+  - sudo apt-get install -y binutils-dev
+  - sudo apt-get install -y bison
+  - sudo apt-get install -y cmake
+  - sudo apt-get install -y flex
+  - sudo apt-get install -y g++
+  - sudo apt-get install -y gcc
+  - sudo apt-get install -y git
+  - sudo apt-get install -y libboost1.65-all-dev
+  - sudo apt-get install -y libbz2-dev
+  - sudo apt-get install -y libdouble-conversion-dev
+  - sudo apt-get install -y libevent-dev
+  - sudo apt-get install -y libgflags-dev
+  - sudo apt-get install -y libgoogle-glog-dev
+  - sudo apt-get install -y libjemalloc-dev
+  - sudo apt-get install -y liblz4-dev
+  - sudo apt-get install -y liblzma-dev
+  - sudo apt-get install -y liblzma5
+  - sudo apt-get install -y libsnappy-dev
+  - sudo apt-get install -y libsodium-dev
+  - sudo apt-get install -y libssl-dev
+  - sudo apt-get install -y libtool
+  - sudo apt-get install -y libunwind8-dev
+  - sudo apt-get install -y make
+  - sudo apt-get install -y pkg-config
+  - sudo apt-get install -y python-dev
+  - sudo apt-get install -y ragel
+
+script: ./mcrouter/scripts/install_ubuntu_18.04.sh "$(pwd)"/mcrouter-install
 
 notifications:
   email:
-    - mcrouter@fb.com
+    - lukeye@fb.com

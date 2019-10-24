@@ -22,4 +22,4 @@ cd "$PKG_DIR/fbthrift/build" || die "cd fbthrift failed"
 
 CXXFLAGS="$CXXFLAGS -fPIC" \
 cmake .. -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR"
-make $MAKE_ARGS && make install $MAKE_ARGS
+make -j2 $MAKE_ARGS && make install $MAKE_ARGS
