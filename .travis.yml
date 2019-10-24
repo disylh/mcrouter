@@ -6,8 +6,13 @@ language: cpp
 compiler:
   - gcc
 
-script: ./mcrouter/scripts/install_ubuntu_16.04.sh "$(pwd)"/mcrouter-install
+jobs:
+  include:
+    - stage: deps
+      script: ./mcrouter/scripts/install_ubuntu_16.04_deps.sh "$(pwd)"/mcrouter-install
+    - stage: mcrouter
+      script: ./mcrouter/scripts/install_ubuntu_16.04_mcrouter.sh "$(pwd)"/mcrouter-install
 
 notifications:
   email:
-    - mcrouter@fb.com
+    - lukeye@fb.com
