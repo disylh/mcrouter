@@ -42,4 +42,4 @@ sudo apt-get install -y \
 
 cd "$(dirname "$0")" || ( echo "cd fail"; exit 1 )
 
-./get_and_build_everything.sh ubuntu-16.04 "$@"
+./get_and_build_everything_by_make.sh "Makefile_ubuntu-16.04" "$@"
