@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#pragma once
+
 #include <mutex>
 
 #include "mcrouter/lib/fbi/cpp/LogFailure.h"

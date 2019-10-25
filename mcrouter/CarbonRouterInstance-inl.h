@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#pragma once
+
 #include <vector>
 
 #include <boost/filesystem/operations.hpp>

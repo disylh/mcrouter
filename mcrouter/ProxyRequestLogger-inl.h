@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#pragma once
+
 #include "mcrouter/McrouterFiberContext.h"
 #include "mcrouter/Proxy.h"
 #include "mcrouter/ProxyBase.h"

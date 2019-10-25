@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#pragma once
+
 #include "mcrouter/Proxy.h"
 #include "mcrouter/lib/McKey.h"
 #include "mcrouter/lib/McResUtil.h"

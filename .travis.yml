@@ -10,4 +10,4 @@ script: ./mcrouter/scripts/install_ubuntu_16.04.sh "$(pwd)"/mcrouter-install
 
 notifications:
   email:
-    - mcrouter@fb.com
+    - lukeye@fb.com
